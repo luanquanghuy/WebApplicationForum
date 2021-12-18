@@ -1,0 +1,15 @@
+﻿
+@{
+	ViewBag.Title = "DangNhap";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Đăng nhập</h2>
+<h2 class="text-danger">@TempData["err"]</h2>
+<form action="/Auth/Login" method="post">
+	User Name: <input type="text" class="form-control" name="taikhoan" placeholder="username" />
+	<br />
+	Password: <input type="password" class="form-control" name="matkhau" placeholder="password" />
+	<input type="submit" class="form-control" value="Login" />
+</form>
+
